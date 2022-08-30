@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      App RR.HH.
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">App RR.HH.</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <!--<strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>-->
+    <ion-card>
+      <img src="./src/assets/trabajo-en-equipo.png" />
+      <ion-card-header>
+        <ion-card-subtitle>RRHH</ion-card-subtitle>
+        <ion-card-title>Fulana App</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Empresa Lider en Recursos Humanos siempre disponible en tu smartphone.
+      </ion-card-content>
+      <ion-button color="primary"[routerLink]="['/login']">Ingresa a la APP</ion-button>
+    </ion-card>
+  </div>
+ 
+
+</ion-content>

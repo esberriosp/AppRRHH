@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ingresa a la cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-form lines="full" class="ion-no-margin">
+    <ion-list-header lines="full">
+      <h3> Inicia sesión </h3>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="stacked">User</ion-label>
+      <ion-input type="text" placeholder="Ingresa tu usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type="password" placeholder="Ingresa tu contraseña"></ion-input>
+    </ion-item>
+    <ion-button type="submit" expand="block" color="primary" [routerLink]="['/index']">Iniciar</ion-button>
+    <br>
+    <ion-button type="reset" expand="block" color="secondary">Limpiar</ion-button>
+    <br>
+    <ion-button size="small" color="tertiary" [routerLink]="['/otra-pagina']">Recuperar</ion-button>
+    <ion-button size="small" color="tertiary" *ngFor="let item of this.test">{{item}}</ion-button>
+    <ion-button size="small" color="tertiary"[routerLink]="['/form']">Registrar</ion-button>
+    <br>
+  </ion-form>
+
+</ion-content>
